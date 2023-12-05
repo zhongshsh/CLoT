@@ -1,10 +1,15 @@
 # CLoT
 
-This is the repository that contains source code for the [project page](https://zhongshsh.github.io/CLoT) of [CLoT](https://xxx). 
+This is the repository that contains source code for the [project page](https://zhongshsh.github.io/CLoT) of [CLoT](https://github.com/sail-sg/CLoT) [[paper]](). 
 
 If you find CLoT useful for your work please cite:
 ```
-xxx
+@misc{zhong2023clot,
+  title={Let's Think Outside the Box: Exploring Leap-of-Thought in Large Language Models with Creative Humor Generation},
+  author={Zhong, Shanshan and Huang, Zhongzhan and Gao, Shanghua and Wen, Weushao and Lin, Liang and Zitnik, Marinka and Zhou, Pan},
+  booktitle={arxiv},
+  year={2023}
+}
 ```
 
 ## Website License
