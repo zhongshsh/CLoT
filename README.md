@@ -1,6 +1,6 @@
 # CLoT
 
-This is the repository that contains source code for the [project page]() of [CLoT](https://xxx). 
+This is the repository that contains source code for the [project page](https://zhongshsh.github.io/CLoT) of [CLoT](https://xxx). 
 
 If you find CLoT useful for your work please cite:
 ```
