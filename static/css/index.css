@@ -17,7 +17,6 @@ body {
   font-variant: small-caps;
 }
 
-
 .teaser .hero-body {
   padding-top: 0;
   padding-bottom: 3rem;
@@ -108,6 +107,19 @@ body {
 }
 
 .publication-body img {
+}
+
+.carousel {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+}
+
+.carousel img {
+  max-width: 100%; /* 确保图片不超过其容器的宽度 */
+  height: auto; /* 保持宽高比 */
+  margin: 0 auto; /* 使图片水平居中 */
+  display: block; /* 去掉底部间距 */
 }
 
 .results-carousel {

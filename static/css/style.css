@@ -1,0 +1,105 @@
+@charset "utf-8";
+body, html { font-size: 100%; 	padding: 0; margin: 0;}
+
+/* Reset */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body{
+	background: #494A5F;
+	color: #D5D6E2;
+	font-weight: 500;
+	font-size: 1.05em;
+	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+}
+a{ color: rgba(255, 255, 255, 0.6);outline: none;text-decoration: none;-webkit-transition: 0.2s;transition: 0.2s;}
+a:hover,a:focus{color:#74777b;text-decoration: none;}
+.htmleaf-container{
+	margin: 0 auto;
+}
+.demo{margin: 2em 0}
+
+a:hover,a:focus{
+	text-decoration: none;
+	outline: none;
+}
+#accordion .panel{
+	border: none;
+	box-shadow: none;
+	border-radius: 0;
+	margin-bottom: -5px;
+}
+#accordion .panel-heading{
+	padding: 0;
+	border-radius: 0;
+	border: none;
+	text-align: center;
+}
+#accordion .panel-title a{
+	display: block;
+	padding: 25px 30px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	background: #333;
+	border-bottom: 1px solid #4a4a4a;
+	position: relative;
+	transition: all 0.5s ease 0s;
+}
+#accordion .panel-title a:hover{
+	background: #4a4a4a;
+}
+#accordion .panel-title a:after,
+#accordion .panel-title a.collapsed:after{
+	content: "\f067";
+	font-family: FontAwesome;
+	font-size: 15px;
+	font-weight: 200;
+	position: absolute;
+	top: 25px;
+	left: 15px;
+	transform: rotate(135deg);
+	transition: all 0.5s ease 0s;
+}
+#accordion .panel-title a.collapsed:after{
+	transform: rotate(0deg);
+}
+#accordion .panel-body{
+	background: #167ea0;
+	padding: 0 0 0 40px;
+	border: none;
+	position: relative;
+}
+#accordion .panel-body p{
+	font-size: 14px;
+	color: #fff;
+	line-height: 25px;
+	background: #3296b7;
+	padding: 30px;
+	margin: 0;
+}
+#accordion .panel-collapse .panel-body p{
+	opacity: 0;
+	transform: scale(0.9);
+	transition: all 0.5s ease-in-out 0s;
+}
+#accordion .panel-collapse.in .panel-body p{
+	opacity: 1;
+	transform: scale(1);
+}
