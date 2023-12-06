@@ -129,7 +129,8 @@
                 platform to investigating LLM's
                 LoT ability. However, the proposed CLoT is <font color=#c56724>not limited to humor generation</font>,
                 and it can also benefit
-                other creative tasks 🤗. See our <a href="https://arxiv.org/pdf/2312.02439.pdf"><b class="panel-heading-click">paper</b></a> for
+                other creative tasks 🤗. See our <a href="https://arxiv.org/pdf/2312.02439.pdf"><b
+                    class="panel-heading-click">paper</b></a> for
                 more details.
               </h4>
               <br>
@@ -151,35 +152,26 @@
   <section class="hero is-light is-small">
     <div class="hero-body">
       <div class="container">
+        <br>
         <h2 class="title is-3 has-text-centered">
           Preview
         </h2>
         <h4 class="panel-title has-text-centered">
-          <i class="fa fa-bullhorn"></i>&nbsp; Click the texts under images to toggle language or get explanations.
+          <i class="fa fa-bullhorn"></i>&nbsp; "@" denotes English translations. Click "Explanation" under images to get
+          explanations.
         </h4>
         <br>
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-chair-tp">
             <img src="static/images/liangjian1.jpg" class="interpolation-image" style="width:430px; height:330px"
               alt="Interpolate start reference image." />
-            <div class="panel panel-default">
-              <div class="panel-heading panel-heading-click" role="tab" id="headingFour" onclick="toggleLanguage2()"
-                title="Click to toggle language">
-                <h4 class="panel-title" id="textToToggle2">
+            <div class="panel panel-default" style="margin-bottom: 0;">
+              <div class="panel-body">
+                <p>
                   导师读了我的论文之后……
-                </h4>
+                  <br>@ After reviewing my paper, the PhD supervisor...
+                </p>
               </div>
-
-              <script>
-                function toggleLanguage2() {
-                  var element = document.getElementById("textToToggle2");
-                  if (element.innerHTML.trim() === "导师读了我的论文之后……") {
-                    element.innerHTML = "After reviewing my paper, the PhD supervisor...";
-                  } else {
-                    element.innerHTML = "导师读了我的论文之后……";
-                  }
-                }
-              </script>
 
               <div class="panel-heading panel-heading-click" role="tab" id="headingFour">
                 <h4 class="panel-title">
@@ -190,7 +182,7 @@
                 </h4>
               </div>
               <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                <div class="panel-body">
+                <div class="panel-body has-text-justified">
                   <p>
                     The person in the image looks serious, holding a broadsword. His expressions match the feelings of a
                     PhD supervisor who just finished reading a really bad paper written by the student.
@@ -203,24 +195,13 @@
           <div class="item item-chair-tp">
             <img src="static/images/daxiong.png" class="interpolation-image" style="width:430px; height:330px"
               alt="Interpolate start reference image." />
-            <div class="panel panel-default">
-              <div class="panel-heading panel-heading-click" role="tab" id="headingFour" onclick="toggleLanguage12()"
-                title="Click to toggle language">
-                <h4 class="panel-title" id="textToToggle12">
+            <div class="panel panel-default" style="margin-bottom: 0;">
+              <div class="panel-body">
+                <p>
                   看来应该剪蓝线才对……
-                </h4>
+                  <br>@ It looks like I should cut the blue wire, huh?
+                </p>
               </div>
-
-              <script>
-                function toggleLanguage12() {
-                  var element = document.getElementById("textToToggle12");
-                  if (element.innerHTML.trim() === "看来应该剪蓝线才对……") {
-                    element.innerHTML = "It looks like we should cut the blue wire, huh?";
-                  } else {
-                    element.innerHTML = "看来应该剪蓝线才对……";
-                  }
-                }
-              </script>
 
               <div class="panel-heading panel-heading-click" role="tab" id="headingFour">
                 <h4 class="panel-title">
@@ -231,10 +212,10 @@
                 </h4>
               </div>
               <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                <div class="panel-body">
+                <div class="panel-body has-text-justified">
                   <p>
                     This is an image capturing a moment of explosion. In the scene, CLoT add the
-                    word, "It looks like we should cut the blue wire, huh?" This is because CLoT associate the image
+                    word, "It looks like I should cut the blue wire, huh?" This is because CLoT associate the image
                     with a common
                     scene in movies where the hero has to decide whether to cut the blue or red wire to defuse a bomb.
                     If they cut the wrong wire, the bomb might explode right away.
@@ -246,24 +227,14 @@
           <div class="item item-shiba">
             <img src="static/images/woman1.png" class="interpolation-image" style="width:430px; height:330px"
               alt="Interpolate start reference image." />
-            <div class="panel panel-default">
-              <div class="panel-heading panel-heading-click" role="tab" id="headingFour" onclick="toggleLanguage3()"
-                title="Click to toggle language">
-                <h4 class="panel-title" id="textToToggle3">
+            <div class="panel panel-default" style="margin-bottom: 0;">
+              <div class="panel-body">
+                <p>
                   脑子短路。
-                </h4>
+                  <br>@ Short circuit in the brain.
+                </p>
               </div>
 
-              <script>
-                function toggleLanguage3() {
-                  var element = document.getElementById("textToToggle3");
-                  if (element.innerHTML.trim() === "脑子短路。") {
-                    element.innerHTML = "Short circuit in the brain";
-                  } else {
-                    element.innerHTML = "脑子短路。";
-                  }
-                }
-              </script>
 
               <div class="panel-heading panel-heading-click" role="tab" id="headingFour">
                 <h4 class="panel-title">
@@ -274,7 +245,7 @@
                 </h4>
               </div>
               <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                <div class="panel-body">
+                <div class="panel-body has-text-justified">
                   <p>
                     The woman is using a stethoscope to listen to her own head. The stethoscope is connected to both her
                     ears and head. This scene bears a striking resemblance to a short circuit in physics, hence CLoT
@@ -287,24 +258,13 @@
           <div class="item item-chair-tp">
             <img src="static/images/dog2.png" class="interpolation-image" style="width:430px; height:330px"
               alt="Interpolate start reference image." />
-            <div class="panel panel-default">
-              <div class="panel-heading panel-heading-click" role="tab" id="headingFour" onclick="toggleLanguage11()"
-                title="Click to toggle language">
-                <h4 class="panel-title" id="textToToggle11">
+            <div class="panel panel-default" style="margin-bottom: 0;">
+              <div class="panel-body">
+                <p>
                   我以前一直以为自己是单身狗，直到我看到我儿子。
-                </h4>
+                  <br>@ I used to think I was a &quot;single dog&quot;, until I laid eyes on my son.
+                </p>
               </div>
-
-              <script>
-                function toggleLanguage11() {
-                  var element = document.getElementById("textToToggle11");
-                  if (element.innerHTML.trim() === "我以前一直以为自己是单身狗，直到我看到我儿子。") {
-                    element.innerHTML = "I used to think I was a &quot;single dog&quot;, until I laid eyes on my son.";
-                  } else {
-                    element.innerHTML = "我以前一直以为自己是单身狗，直到我看到我儿子。";
-                  }
-                }
-              </script>
 
               <div class="panel-heading panel-heading-click" role="tab" id="headingFour">
                 <h4 class="panel-title">
@@ -315,7 +275,7 @@
                 </h4>
               </div>
               <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                <div class="panel-body">
+                <div class="panel-body has-text-justified">
                   <p>
                     The dog looks quite proud, and CLoT captions it with the sentiment: "I used to think I was a 'single
                     dog',
@@ -331,24 +291,13 @@
           <div class="item item-fullbody">
             <img src="static/images/shawshank.png" class="interpolation-image" style="width:430px; height:330px"
               alt="Interpolate start reference image." />
-            <div class="panel panel-default">
-              <div class="panel-heading panel-heading-click" role="tab" id="headingFour" onclick="toggleLanguage4()"
-                title="Click to toggle language">
-                <h4 class="panel-title" id="textToToggle4">
+            <div class="panel panel-default" style="margin-bottom: 0;">
+              <div class="panel-body">
+                <p>
                   多喝热水！
-                </h4>
+                  <br>@ Drink more hot water!
+                </p>
               </div>
-
-              <script>
-                function toggleLanguage4() {
-                  var element = document.getElementById("textToToggle4");
-                  if (element.innerHTML.trim() === "多喝热水！") {
-                    element.innerHTML = "Drink more hot water!";
-                  } else {
-                    element.innerHTML = "多喝热水！";
-                  }
-                }
-              </script>
 
               <div class="panel-heading panel-heading-click" role="tab" id="headingFour">
                 <h4 class="panel-title">
@@ -359,7 +308,7 @@
                 </h4>
               </div>
               <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                <div class="panel-body">
+                <div class="panel-body has-text-justified">
                   <p>
                     This image is from the movie "The Shawshank Redemption." In the image, a man is tilting his head
                     back in the rain, appearing as if he's trying hard to drink water. This reminds CLoT of the Chinese
@@ -376,24 +325,13 @@
           <div class="item item-blueshirt">
             <img src="static/images/xiantiaogou1.jpg" class="interpolation-image" style="width:430px; height:330px"
               alt="Interpolate start reference image." />
-            <div class="panel panel-default">
-              <div class="panel-heading panel-heading-click" role="tab" id="headingFour" onclick="toggleLanguage5()"
-                title="Click to toggle language">
-                <h5 class="panel-title" id="textToToggle5">
+            <div class="panel panel-default" style="margin-bottom: 0;">
+              <div class="panel-body">
+                <p>
                   可以下来了吗？
-                </h5>
+                  <br>@ Can you come down now?
+                </p>
               </div>
-
-              <script>
-                function toggleLanguage5() {
-                  var element = document.getElementById("textToToggle5");
-                  if (element.innerHTML.trim() === "可以下来了吗？") {
-                    element.innerHTML = "Can you come down now?";
-                  } else {
-                    element.innerHTML = "可以下来了吗？";
-                  }
-                }
-              </script>
 
               <div class="panel-heading panel-heading-click" role="tab" id="headingFour">
                 <h5 class="panel-title">
@@ -404,7 +342,7 @@
                 </h5>
               </div>
               <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                <div class="panel-body">
+                <div class="panel-body has-text-justified">
                   <p>
                     This is a regular scene with two little dogs. The white dog, with its legs apart and hands raised,
                     says to the brown dog, "Can you come down now?" This implies that in the image, it looks like the
@@ -418,24 +356,14 @@
           <div class="item item-mask">
             <img src="static/images/hotdog.png" class="interpolation-image" style="width:430px; height:330px"
               alt="Interpolate start reference image." />
-            <div class="panel panel-default">
-              <div class="panel-heading panel-heading-click" role="tab" id="headingFour" onclick="toggleLanguage6()"
-                title="Click to toggle language">
-                <h5 class="panel-title" id="textToToggle6">
+            <div class="panel panel-default" style="margin-bottom: 0;">
+              <div class="panel-body">
+                <p>
                   热狗烹饪方法。
-                </h5>
+                  <br>@ Hot dog cooking method.
+                </p>
               </div>
 
-              <script>
-                function toggleLanguage6() {
-                  var element = document.getElementById("textToToggle6");
-                  if (element.innerHTML.trim() === "热狗烹饪方法。") {
-                    element.innerHTML = "Hot dog cooking method.";
-                  } else {
-                    element.innerHTML = "热狗烹饪方法。";
-                  }
-                }
-              </script>
 
               <div class="panel-heading panel-heading-click" role="tab" id="headingFour">
                 <h5 class="panel-title">
@@ -446,7 +374,7 @@
                 </h5>
               </div>
               <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                <div class="panel-body">
+                <div class="panel-body has-text-justified">
                   <p>
                     The image shows a dog calmly sitting in the middle of a fireplace, which led CLoT to
                     humorously associate it with "hot dogs", resulting in a caption that is both surprising and fitting.
@@ -458,24 +386,14 @@
           <div class="item item-coffee">
             <img src="static/images/writedog.jpg" class="interpolation-image" style="width:430px; height:330px"
               alt="Interpolate start reference image." />
-            <div class="panel panel-default">
-              <div class="panel-heading panel-heading-click" role="tab" id="headingFour" onclick="toggleLanguage7()"
-                title="Click to toggle language">
-                <h5 class="panel-title" id="textToToggle7">
+            <div class="panel panel-default" style="margin-bottom: 0;">
+              <div class="panel-body">
+                <p>
                   主人，你这电吹风是认真的吗？
-                </h5>
+                  <br>@ Whoa, is this hairdryer for real, hooman?
+                </p>
               </div>
 
-              <script>
-                function toggleLanguage7() {
-                  var element = document.getElementById("textToToggle7");
-                  if (element.innerHTML.trim() === "主人，你这电吹风是认真的吗？") {
-                    element.innerHTML = "Whoa, is this hairdryer for real, hooman?";
-                  } else {
-                    element.innerHTML = "主人，你这电吹风是认真的吗？";
-                  }
-                }
-              </script>
 
               <div class="panel-heading panel-heading-click" role="tab" id="headingFour">
                 <h5 class="panel-title">
@@ -486,7 +404,7 @@
                 </h5>
               </div>
               <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                <div class="panel-body">
+                <div class="panel-body has-text-justified">
                   <p>
                     This is a snapshot of a dog leaping in the air. The dog's fur is flying backward, looking like it's
                     being blown away by a powerful hairdryer. So, CLoT added the caption for the dog: "Whoa, is this
@@ -499,24 +417,13 @@
           <div class="item item-toby">
             <img src="static/images/tom.png" class="interpolation-image" style="width:430px; height:330px"
               alt="Interpolate start reference image." />
-            <div class="panel panel-default">
-              <div class="panel-heading panel-heading-click" role="tab" id="headingFour" onclick="toggleLanguage8()"
-                title="Click to toggle language">
-                <h5 class="panel-title" id="textToToggle8">
+            <div class="panel panel-default" style="margin-bottom: 0;">
+              <div class="panel-body">
+                <p>
                   不好意思，这里有人了。
-                </h5>
+                  <br>@ Sorry, this spot's taken.
+                </p>
               </div>
-
-              <script>
-                function toggleLanguage8() {
-                  var element = document.getElementById("textToToggle8");
-                  if (element.innerHTML.trim() === "不好意思，这里有人了。") {
-                    element.innerHTML = "Sorry, this spot's taken.";
-                  } else {
-                    element.innerHTML = "不好意思，这里有人了。";
-                  }
-                }
-              </script>
 
               <div class="panel-heading panel-heading-click" role="tab" id="headingFour">
                 <h5 class="panel-title">
@@ -527,7 +434,7 @@
                 </h5>
               </div>
               <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                <div class="panel-body">
+                <div class="panel-body has-text-justified">
                   <p>
                     This image is from Forrest Gump. The man in the image has his hands open, as if blocking the seat to
                     prevent someone from sitting
@@ -541,24 +448,13 @@
           <div class="item item-steve">
             <img src="static/images/peiqi1.jpg" class="interpolation-image" style="width:430px; height:330px"
               alt="Interpolate start reference image." />
-            <div class="panel panel-default">
-              <div class="panel-heading panel-heading-click" role="tab" id="headingFour" onclick="toggleLanguage1()"
-                title="Click to toggle language">
-                <h4 class="panel-title" id="textToToggle1">
+            <div class="panel panel-default" style="margin-bottom: 0;">
+              <div class="panel-body">
+                <p>
                   煎饼果子要趁热吃，否则会变成小猪。
-                </h4>
+                  @ Enjoy the pancake while it's hot, or it'll turn into a piglet.
+                </p>
               </div>
-
-              <script>
-                function toggleLanguage1() {
-                  var element = document.getElementById("textToToggle1");
-                  if (element.innerHTML.trim() === "煎饼果子要趁热吃，否则会变成小猪。") {
-                    element.innerHTML = "Enjoy the pancake while it's hot, or it'll turn into a piglet.";
-                  } else {
-                    element.innerHTML = "煎饼果子要趁热吃，否则会变成小猪。";
-                  }
-                }
-              </script>
 
               <div class="panel-heading panel-heading-click" role="tab" id="headingFour">
                 <h4 class="panel-title">
@@ -569,7 +465,7 @@
                 </h4>
               </div>
               <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                <div class="panel-body">
+                <div class="panel-body has-text-justified">
                   <p>
                     "Enjoy the pancake while it's hot, or it'll turn into a piglet" is said by the red piglet cooking
                     pancakes. This suggests that the nearby blue piglet is transformed from the pancake which hasn't
@@ -583,24 +479,14 @@
           <div class="item item-steve">
             <img src="static/images/spiderman.png" class="interpolation-image" style="width:430px; height:330px"
               alt="Interpolate start reference image." />
-            <div class="panel panel-default">
-              <div class="panel-heading panel-heading-click" role="tab" id="headingFour" onclick="toggleLanguage9()"
-                title="Click to toggle language">
-                <h4 class="panel-title" id="textToToggle9">
+            <div class="panel panel-default" style="margin-bottom: 0;">
+              <div class="panel-body">
+                <p>
                   刚擦的玻璃不能弄脏。
-                </h4>
+                  @ The glass I just cleaned shouldn't get dirty again.
+                </p>
               </div>
 
-              <script>
-                function toggleLanguage9() {
-                  var element = document.getElementById("textToToggle9");
-                  if (element.innerHTML.trim() === "刚擦的玻璃不能弄脏。") {
-                    element.innerHTML = "The glass I just cleaned shouldn't get dirty again.";
-                  } else {
-                    element.innerHTML = "刚擦的玻璃不能弄脏。";
-                  }
-                }
-              </script>
 
               <div class="panel-heading panel-heading-click" role="tab" id="headingFour">
                 <h4 class="panel-title">
@@ -611,7 +497,7 @@
                 </h4>
               </div>
               <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                <div class="panel-body">
+                <div class="panel-body has-text-justified">
                   <p>
                     Spider-Man crawls carefully on the glass, not even daring to touch it with his palms. He's worried
                     that he might dirty the freshly cleaned, transparent glass.
@@ -623,24 +509,13 @@
           <div class="item item-steve">
             <img src="static/images/man.png" class="interpolation-image" style="width:430px; height:330px"
               alt="Interpolate start reference image." />
-            <div class="panel panel-default">
-              <div class="panel-heading panel-heading-click" role="tab" id="headingFour" onclick="toggleLanguage10()"
-                title="Click to toggle language">
-                <h4 class="panel-title" id="textToToggle10">
+            <div class="panel panel-default" style="margin-bottom: 0;">
+              <div class="panel-body">
+                <p>
                   真男人不回头看爆炸。
-                </h4>
+                  <br>@ A real man doesn't look back at explosions.
+                </p>
               </div>
-
-              <script>
-                function toggleLanguage10() {
-                  var element = document.getElementById("textToToggle10");
-                  if (element.innerHTML.trim() === "真男人不回头看爆炸。") {
-                    element.innerHTML = "A real man doesn't look back at explosions.";
-                  } else {
-                    element.innerHTML = "真男人不回头看爆炸。";
-                  }
-                }
-              </script>
 
               <div class="panel-heading panel-heading-click" role="tab" id="headingFour">
                 <h4 class="panel-title">
@@ -651,7 +526,7 @@
                 </h4>
               </div>
               <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                <div class="panel-body">
+                <div class="panel-body has-text-justified">
                   <p>
                     This image is a poster for the movie "Obernheimer," and CLoT's caption, "A real man doesn't look
                     back at explosions," is a common meme in the movie. It's often used to portray a masculine
@@ -663,6 +538,7 @@
             </div>
           </div>
         </div>
+        <br>
       </div>
     </div>
   </section>
@@ -702,8 +578,10 @@
     </div>
   </section> -->
   <!--/ Abstract. -->
+
+
   <!-- Image carousel More Examples-->
-  <section class="hero is-light is-small">
+  <section class="section">
     <div class="hero-body">
       <div class="container">
         <h2 class="title is-3 has-text-centered">
@@ -714,19 +592,22 @@
         </h4>
         <br>
         <div id="carousel-demo" class="carousel results-carousel">
-          <!-- <div class="item-0" style="align-items: center; justify-content: center; height: 75vh;">
+          <div class="item-0" style="align-items: center; justify-content: center; height: 75vh">
             <img src="static/images/example0.png" class="interpolation-image" style="width:900px;"
               alt="Interpolate start reference image." />
             <br>
-            <h4 class="panel-title has-text-justified">
-              Comparison between (multimodal) large language model (red) and its CLoT-integrated version (blue) for
-              Oogiri-style multimodal humor generation. According to the model input that can be image, text or both,
-              there are three Oogiri tasks, "Image&Text to Text (IT2T)", "Image to Text (I2T)", and "Text to Text
-              (T2T)”, where text can be English (EN), Chinese (CN), and Japanese (JP). The baseline LLM is Qwen-VL.
-              While humor is subjective, these examples demonstrate CLoT's leap-of-thought capacity of using excellent
-              creative thinking to produce high-quality humor responses. See more responses of Oogiri game by CLoT in next carousels.
-            </h4>
-          </div> -->
+            <div class="panel-body has-text-justified" style="max-width: 1200px; margin: 0 auto;">
+              <p>
+                Comparison between (multimodal) large language model (red) and its CLoT-integrated version (blue) for
+                Oogiri-style multimodal humor generation. According to the model input that can be image, text or both,
+                there are three Oogiri tasks, "Image&Text to Text (IT2T)", "Image to Text (I2T)", and "Text to Text
+                (T2T)", where text can be English (EN), Chinese (CN), and Japanese (JP). The baseline LLM is Qwen-VL.
+                While humor is subjective, these examples demonstrate CLoT's leap-of-thought capacity of using excellent
+                creative thinking to produce high-quality humor responses. See more responses of Oogiri game by CLoT in
+                next carousels.
+              </p>
+            </div>
+          </div>
           <div class="item-3" style="display: flex; align-items: center; justify-content: center; height: 75vh;">
             <img src="static/images/example3.png" class="interpolation-image" style="width:700px;"
               alt="Interpolate start reference image." />
@@ -763,10 +644,12 @@
   <!-- End image carousel -->
 
 
+
   <!-- Image carousel Diversity Responses -->
   <section class="hero is-light is-small">
     <div class="hero-body">
       <div class="container">
+        <br>
         <h2 class="title is-3 has-text-centered">
           Diversity Responses of Oogiri Game by CLoT
         </h2>
@@ -778,136 +661,177 @@
           <div class="item item-chair-tp">
             <img src="static/images/cat.jpg" class="interpolation-image" style="width:430px; height:400px"
               alt="Interpolate start reference image." />
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  你又想偷吃我的猫粮！@ You're trying to sneak a bite of my cat food again, aren't you?
-                </h4>
+            <div class="panel panel-default" style="margin: 0 auto;">
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
+                  你又想偷吃我的猫粮！<br>@ You're trying to sneak a bite of my cat food again, aren't you?
+                </p>
               </div>
-              <div class="panel-heading">
-                <h4 class="panel-title">
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
                   在路边被一车子压扁之后…… @ After getting squashed by a car on the roadside...
-                </h4>
+                </p>
               </div>
-              <div class="panel-heading">
-                <h4 class="panel-title">
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
                   猫版大鹏展翅。@ The cat's version of a majestic spread of wings, like a giant roc
                   taking flight.
-                </h4>
+                </p>
               </div>
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  你这猫也太会摆姿势了吧！@ Oh, your cat really knows how to strike a pose!
-                </h4>
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
+                  你这猫也太会摆姿势了吧！<br> @ Oh, your cat really knows how to strike a pose!
+                </p>
               </div>
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  早上好！今天我来教你如何用爪子打招呼。@ Good morning! Today, I'll teach you how to greet with a pawshake.
-                </h4>
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
+                  早上好！今天我来教你如何用爪子打招呼。<br>@ Good morning! Today, I'll teach you how to greet with a pawshake.
+                </p>
               </div>
             </div>
           </div>
           <div class="item item-chair-tp">
             <img src="static/images/eagle.jpg" class="interpolation-image" style="width:430px; height:400px"
               alt="Interpolate start reference image." />
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  猎豹扑向鹰的瞬间被鹰带飞。@ The moment the cheetah pounced, it got scooped up by the eagle
+            <div class="panel panel-default" style="margin: 0 auto;">
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
+                  猎豹扑向鹰的瞬间被鹰带飞。<br>@ The moment the cheetah pounced, it got scooped up by the eagle
                   and taken for a ride.
-                </h4>
+                </p>
               </div>
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  别追了，我已经把你的孩子叼走了。 @ Stop chasing me. I've already grabbed your kid.
-                </h4>
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
+                  别追了，我已经把你的孩子叼走了。 <br>@ Stop chasing me. I've already grabbed your kid.
+                </p>
               </div>
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  你先别飞，我还有话要说。@ Don't take off just yet; I've got something to say.
-                </h4>
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
+                  你先别飞，我还有话要说。<br>@ Don't take off just yet; I've got something to say.
+                </p>
               </div>
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  客官你还没付钱！@ Hey, you haven't paid yet, sir!
-                </h4>
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
+                  客官你还没付钱！<br>@ Hey, you haven't paid yet, sir!
+                </p>
               </div>
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  每次做坏事都要替你擦屁股。@ I always have to clean up after you every time you mess up.
-                </h4>
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
+                  每次做坏事都要替你擦屁股。<br>@ I always have to clean up after you every time you mess up.
+                </p>
               </div>
             </div>
           </div>
           <div class="item item-chair-tp">
             <img src="static/images/cat2.png" class="interpolation-image" style="width:430px; height:400px"
               alt="Interpolate start reference image." />
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  什么?! 现在要去宠物医院做绝育手术!？@ What?! Going to the pet hospital now for a neutering surgery!?
-                </h4>
+            <div class="panel panel-default" style="margin: 0 auto;">
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
+                  什么？！现在要去宠物医院做绝育手术!？<br>@ What?! Going to the pet hospital now for a neutering surgery!?
+                </p>
               </div>
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  哇，真的有条大鱼！@ Wow, that's a really big fish!
-                </h4>
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
+                  哇，真的有条大鱼！<br>@ Wow, that's a really big fish!
+                </p>
               </div>
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  司机师傅，快看路啊！@ Hey driver, watch the road! Hurry up!
-                </h4>
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
+                  司机师傅，快看路啊！<br>@ Hey driver, watch the road! Hurry up!
+                </p>
               </div>
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  安全带是系在脖子上的吗？@ Is the seatbelt supposed to be fastened around the neck?
-                </h4>
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
+                  安全带是系在脖子上的吗？<br>@ Is the seatbelt supposed to be fastened around the neck?
+                </p>
               </div>
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  快！追上前面那辆车！@ Hurry! Catch up with the car in front!
-                </h4>
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
+                  快！追上前面那辆车！<br>@ Hurry! Catch up with the car in front!
+                </p>
               </div>
             </div>
           </div>
           <div class="item item-chair-tp">
             <img src="static/images/dog.jpg" class="interpolation-image" style="width:430px; height:400px"
               alt="Interpolate start reference image." />
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  终于知道为什么他俩不说话了。@ Finally figured out why those two aren't barking.
-                </h4>
+            <div class="panel panel-default" style="margin: 0 auto;">
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
+                  终于知道为什么他俩不说话了。<br>@ Finally figured out why those two aren't barking.
+                </p>
               </div>
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  最近又胖了。@ We've packed on some pounds again lately.
-                </h4>
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
+                  最近又胖了。<br>@ We've packed on some pounds again lately.
+                </p>
               </div>
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  说好的一起藏猫猫呢？@ We're all hidden and waiting, but you haven't come to find us yet!
-                </h4>
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
+                  说好的一起藏猫猫呢？<br>@ We're all hidden and waiting, but you haven't come to find us yet!
+                </p>
               </div>
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  不让你们吃巧克力，就只能这样了。@ If I can't let you have chocolate, this is the only option.
-                </h4>
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
+                  不让你们吃巧克力，就只能这样了。<br>@ If I can't let you have chocolate, this is the only option.
+                </p>
               </div>
-              <div class="panel-heading">
-                <h4 class="panel-title">
+              <div class="panel-body has-text-justified" style="border-bottom: 1px solid #bbbbbb;">
+                <p>
                   你俩是不是又把家具都拆了。@ Did you two go and take apart all the furniture again?
-                </h4>
+                </p>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   </section>
   <!-- End image carousel -->
 
+  <!-- Image carousel Comparison-->
+  <section class="section">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered">
+          Comparing Responses of Oogiri Game by LLMs
+        </h2>
+        <h4 class="panel-title has-text-centered">
+          <i class="fa fa-bullhorn"></i>&nbsp; "@" denotes English translations.
+        </h4>
+        <br>
+        <div id="carousel-demo" class="carousel results-carousel">
+          <div class="item-3" style="display: flex; align-items: center; justify-content: center; height: 75vh;">
+            <img src="static/images/example8.png" class="interpolation-image" style="width:800px;"
+              alt="Interpolate start reference image." />
+          </div>
+          <div class="item-4 " style="display: flex; align-items: center; justify-content: center; height: 75vh;">
+            <img src="static/images/example9.png" class="interpolation-image" style="width:800px;"
+              alt="Interpolate start reference image." />
+          </div>
+          <div class="item-2 " style="display: flex; align-items: center; justify-content: center; height: 75vh;">
+            <img src="static/images/example10.png" class="interpolation-image" style="width:800px;"
+              alt="Interpolate start reference image." />
+          </div>
+          <div class="item-1" style="display: flex; align-items: center; justify-content: center; height: 75vh;">
+            <img src="static/images/example11.png" class="interpolation-image" style="width:800px;"
+              alt="Interpolate start reference image." />
+          </div>
+          <div class="item-7" style="display: flex; align-items: center; justify-content: center; height: 75vh;">
+            <img src="static/images/example12.png" class="interpolation-image" style="width:800px;"
+              alt="Interpolate start reference image." />
+          </div>
+          <div class="item-6" style="display: flex; align-items: center; justify-content: center; height: 75vh;">
+            <img src="static/images/example13.png" class="interpolation-image" style="width:800px;"
+              alt="Interpolate start reference image." />
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
 
   <!-- Paper poster -->
   <!-- <section class="hero is-small is-light">
@@ -923,8 +847,9 @@
   </section> -->
   <!--End paper poster -->
 
-  <section class="section" id="BibTeX">
+  <section class="hero is-light is-small" id="BibTeX">
     <div class="container is-max-desktop content">
+      <br>
       <h2 class="title">BibTeX</h2>
       <pre><code>@misc{zhong2023clot,
   title={Let's Think Outside the Box: Exploring Leap-of-Thought in Large Language Models with Creative Humor Generation},
@@ -935,6 +860,7 @@
       <script type="text/javascript" id="clustrmaps"
         src="//clustrmaps.com/map_v2.js?d=bGz-i05vJ4AaK_yxWnCTXpUpTC2n9AStAEC3fPN7iJE&cl=ffffff&w=a"></script>
     </div>
+    <br>
   </section>
 
   <footer class="footer">
