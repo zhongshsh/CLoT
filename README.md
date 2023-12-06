@@ -16,6 +16,6 @@ If you find CLoT useful for your work please cite:
 This page is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
 
-## Acknowledgments
+## Acknowledgment
 
 Many thanks to [nerfies](https://github.com/nerfies) for their simple and clean [website framework](https://github.com/nerfies/nerfies.github.io).
