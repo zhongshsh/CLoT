@@ -29,7 +29,37 @@
   <!-- down box: https://www.jq22.com/jquery-info23962 -->
   <script src="static/js/jquery-1.10.2.js"></script>
   <script src="static/js/bootstrap-3.3.4.js"></script>
+  <style>
+    /* 初始图片样式 */
+    .interpolation-image {
+        width: 430px;
+        height: 330px;
+        object-fit: cover;
+        cursor: pointer;
+    }
 
+    /* 放大后的图片样式 */
+    .enlarged {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+        overflow: hidden;
+        display: none;
+    }
+
+    .enlarged img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+</style>
   <style>
     .panel-heading-click:hover {
       cursor: pointer;
@@ -164,7 +194,7 @@
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-chair-tp">
             <img src="static/images/liangjian1.jpg" class="interpolation-image" style="width:430px; height:330px; object-fit: cover;"
-              alt="Interpolate start reference image." />
+              alt="Interpolate start reference image." onclick="toggleImageSize(this)"/>
             <div class="panel panel-default" style="margin-bottom: 0;">
               <div class="panel-body">
                 <p>
@@ -194,7 +224,7 @@
 
           <div class="item item-chair-tp">
             <img src="static/images/daxiong.png" class="interpolation-image" style="width:430px; height:330px; object-fit: cover;"
-              alt="Interpolate start reference image." />
+              alt="Interpolate start reference image."  onclick="toggleImageSize(this)"/>
             <div class="panel panel-default" style="margin-bottom: 0;">
               <div class="panel-body">
                 <p>
@@ -226,7 +256,7 @@
           </div>
           <div class="item item-shiba">
             <img src="static/images/woman1.png" class="interpolation-image" style="width:430px; height:330px; object-fit: cover;""
-              alt="Interpolate start reference image." />
+              alt="Interpolate start reference image."  onclick="toggleImageSize(this)"/>
             <div class="panel panel-default" style="margin-bottom: 0;">
               <div class="panel-body">
                 <p>
@@ -257,7 +287,7 @@
           </div>
           <div class="item item-chair-tp">
             <img src="static/images/dog2.png" class="interpolation-image" style="width:430px; height:330px; object-fit: cover;""
-              alt="Interpolate start reference image." />
+              alt="Interpolate start reference image."  onclick="toggleImageSize(this)"/>
             <div class="panel panel-default" style="margin-bottom: 0;">
               <div class="panel-body">
                 <p>
@@ -290,7 +320,7 @@
           </div>
           <div class="item item-fullbody">
             <img src="static/images/shawshank.png" class="interpolation-image" style="width:430px; height:330px; object-fit: cover;""
-              alt="Interpolate start reference image." />
+              alt="Interpolate start reference image."  onclick="toggleImageSize(this)"/>
             <div class="panel panel-default" style="margin-bottom: 0;">
               <div class="panel-body">
                 <p>
@@ -324,7 +354,7 @@
           </div>
           <div class="item item-blueshirt">
             <img src="static/images/xiantiaogou1.jpg" class="interpolation-image" style="width:430px; height:330px; object-fit: cover;""
-              alt="Interpolate start reference image." />
+              alt="Interpolate start reference image."  onclick="toggleImageSize(this)"/>
             <div class="panel panel-default" style="margin-bottom: 0;">
               <div class="panel-body">
                 <p>
@@ -355,7 +385,7 @@
           </div>
           <div class="item item-mask">
             <img src="static/images/hotdog.png" class="interpolation-image" style="width:430px; height:330px; object-fit: cover;""
-              alt="Interpolate start reference image." />
+              alt="Interpolate start reference image."  onclick="toggleImageSize(this)"/>
             <div class="panel panel-default" style="margin-bottom: 0;">
               <div class="panel-body">
                 <p>
@@ -385,7 +415,7 @@
           </div>
           <div class="item item-coffee">
             <img src="static/images/writedog.jpg" class="interpolation-image" style="width:430px; height:330px; object-fit: cover;""
-              alt="Interpolate start reference image." />
+              alt="Interpolate start reference image."  onclick="toggleImageSize(this)"/>
             <div class="panel panel-default" style="margin-bottom: 0;">
               <div class="panel-body">
                 <p>
@@ -416,7 +446,7 @@
           </div>
           <div class="item item-toby">
             <img src="static/images/tom.png" class="interpolation-image" style="width:430px; height:330px; object-fit: cover;""
-              alt="Interpolate start reference image." />
+              alt="Interpolate start reference image."  onclick="toggleImageSize(this)"/>
             <div class="panel panel-default" style="margin-bottom: 0;">
               <div class="panel-body">
                 <p>
@@ -447,7 +477,7 @@
           </div>
           <div class="item item-steve">
             <img src="static/images/peiqi1.jpg" class="interpolation-image" style="width:430px; height:330px; object-fit: cover;""
-              alt="Interpolate start reference image." />
+              alt="Interpolate start reference image."  onclick="toggleImageSize(this)"/>
             <div class="panel panel-default" style="margin-bottom: 0;">
               <div class="panel-body">
                 <p>
@@ -478,7 +508,7 @@
           </div>
           <div class="item item-steve">
             <img src="static/images/spiderman.png" class="interpolation-image" style="width:430px; height:330px; object-fit: cover;""
-              alt="Interpolate start reference image." />
+              alt="Interpolate start reference image."  onclick="toggleImageSize(this)"/>
             <div class="panel panel-default" style="margin-bottom: 0;">
               <div class="panel-body">
                 <p>
@@ -508,7 +538,7 @@
           </div>
           <div class="item item-steve">
             <img src="static/images/man.png" class="interpolation-image" style="width:430px; height:330px; object-fit: cover;""
-              alt="Interpolate start reference image." />
+              alt="Interpolate start reference image."  onclick="toggleImageSize(this)"/>
             <div class="panel panel-default" style="margin-bottom: 0;">
               <div class="panel-body">
                 <p>
@@ -879,6 +909,27 @@
       </div>
     </div>
   </footer>
+
+<!-- 放大后的图片容器 -->
+<div id="enlarged-container" class="enlarged" onclick="toggleImageSize()">
+  <img id="enlarged-image" src="" alt="Enlarged Image">
+</div>
+
+<script>
+  function toggleImageSize(img) {
+      var enlargedContainer = document.getElementById('enlarged-container');
+      var enlargedImage = document.getElementById('enlarged-image');
+
+      // 如果容器是可见的，表示已经放大，则还原
+      if (enlargedContainer.style.display === 'flex') {
+          enlargedContainer.style.display = 'none';
+      } else {
+          // 否则，放大图片
+          enlargedImage.src = img.src;
+          enlargedContainer.style.display = 'flex';
+      }
+  }
+</script>
 
 
   <script>
